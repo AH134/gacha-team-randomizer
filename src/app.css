@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+	--text: #ede9f0;
+	--background: #120c17;
+	--primary: #bc97da;
+	--secondary: #5e218f;
+	--accent: #9f44e8;
+
+	--text-50: #f3f0f5;
+	--text-100: #e6e1ea;
+	--text-200: #cdc2d6;
+	--text-300: #b4a4c1;
+	--text-400: #9c86ac;
+	--text-500: #836798;
+	--text-600: #695379;
+	--text-700: #4e3e5b;
+	--text-800: #34293d;
+	--text-900: #1a151e;
+	--text-950: #0d0a0f;
+
+	--background-50: #f3eef6;
+	--background-100: #e6deed;
+	--background-200: #cebcdc;
+	--background-300: #b59bca;
+	--background-400: #9c79b9;
+	--background-500: #8358a7;
+	--background-600: #694686;
+	--background-700: #4f3564;
+	--background-800: #352343;
+	--background-900: #1a1221;
+	--background-950: #0d0911;
+
+	--primary-50: #f3ecf8;
+	--primary-100: #e7d9f2;
+	--primary-200: #ceb4e4;
+	--primary-300: #b68ed7;
+	--primary-400: #9e68ca;
+	--primary-500: #8642bd;
+	--primary-600: #6b3597;
+	--primary-700: #502871;
+	--primary-800: #351b4b;
+	--primary-900: #1b0d26;
+	--primary-950: #0d0713;
+
+	--secondary-50: #f3eafa;
+	--secondary-100: #e7d5f6;
+	--secondary-200: #cfacec;
+	--secondary-300: #b782e3;
+	--secondary-400: #9f59d9;
+	--secondary-500: #882fd0;
+	--secondary-600: #6c26a6;
+	--secondary-700: #511c7d;
+	--secondary-800: #361353;
+	--secondary-900: #1b092a;
+	--secondary-950: #0e0515;
+
+	--accent-50: #f3e8fc;
+	--accent-100: #e7d2f9;
+	--accent-200: #d0a4f4;
+	--accent-300: #b877ee;
+	--accent-400: #a149e9;
+	--accent-500: #891ce3;
+	--accent-600: #6e16b6;
+	--accent-700: #521188;
+	--accent-800: #370b5b;
+	--accent-900: #1b062d;
+	--accent-950: #0e0317;
+
+	--linearMainPage: linear-gradient(to bottom, #120c17, #20152a);
+	--linearPrimarySecondary: linear-gradient(#bc97da, #5e218f);
+	--linearPrimaryAccent: linear-gradient(#bc97da, #9f44e8);
+	--linearPrimaryAccentLeft: linear-gradient(to left, #bc97da, #9f44e8);
+	--linearSecondaryAccent: linear-gradient(#5e218f, #9f44e8);
+	--radialPrimarySecondary: radial-gradient(#bc97da, #5e218f);
+	--radialPrimaryAccent: radial-gradient(#bc97da, #9f44e8);
+	--radialSecondaryAccent: radial-gradient(#5e218f, #9f44e8);
+
+	--text-xsm: 0.5rem;
+	--text-sm: 0.75rem;
+	--text-md: 1rem;
+	--text-lg: 1.25rem;
+	--text-xl: 1.5rem;
+	--text-2xl: 1.75rem;
+	--text-3xl: 2rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 2.5rem;
+	--text-6xl: 2.75rem;
+
+	--margin-xsm: 0.25rem;
+	--margin-sm: 0.5rem;
+	--margin-md: 0.75rem;
+	--margin-lg: 1.25rem;
+	--margin-xl: 1.75rem;
+	--margin-2xl: 2.5rem;
+	--margin-4xl: 5rem;
+
+	--padding-xsm: 0.25rem;
+	--padding-sm: 0.5rem;
+	--padding-md: 0.75rem;
+	--padding-lg: 1.25rem;
+	--padding-xl: 1.75rem;
+	--padding-2xl: 2.5rem;
+}
+
+* {
+	color: var(--text);
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+body {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	background: var(--linearMainPage);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
