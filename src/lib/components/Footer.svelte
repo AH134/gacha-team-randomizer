@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { emotesList } from '$lib/data/home';
+	import { emotes } from '$lib/data/home';
 </script>
 
 <footer id="footer" class="cont">
-	<div id="right-container" class="cont">
+	<div id="disclaimer-container" class="cont">
 		<p id="r1">Made with △ by @woc_1</p>
 		<p id="r2">
 			© All rights reserved by HoYoverse. Other properties belong to their respective owners.
@@ -11,8 +11,13 @@
 	</div>
 	<hr id="breaker" />
 	<div id="emotes-container" class="cont">
-		{#each emotesList as emote (emote.id)}
-			<img src={emote.src} alt={emote.alt} width="80px" height="80px" />
+		{#each emotes as emote (emote.id)}
+			<img
+				src={`images/${emote.gameType}/emotes/${emote.name}.webp`}
+				alt={emote.alt}
+				width="80px"
+				height="80px"
+			/>
 		{/each}
 	</div>
 </footer>
@@ -35,7 +40,7 @@
 		background-color: rgba(237, 233, 240, 5%);
 	}
 
-	#right-container {
+	#disclaimer-container {
 		flex-direction: column;
 	}
 
@@ -59,6 +64,13 @@
 		justify-content: center;
 		flex-direction: row;
 		gap: var(--margin-xl);
+	}
+
+	@media only screen and (max-width: 830px) {
+		#emotes-container img {
+			width: 50px;
+			height: 50px;
+		}
 	}
 
 	@media only screen and (max-width: 768px) {

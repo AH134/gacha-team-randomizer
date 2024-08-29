@@ -1,14 +1,14 @@
 <script>
 	import Card from './Card.svelte';
-	import { gamesList } from '$lib/data/home';
+	import { games } from '$lib/data/home';
 </script>
 
 <div>
 	<h1 id="game">Games</h1>
 
 	<div id="card-container">
-		{#each gamesList as item (item.id)}
-			<Card src={item.srcCard} alt={item.alt} href={item.href} name={item.name}></Card>
+		{#each games as game (game.id)}
+			<Card alt={game.alt} name={game.name} game={game.gameType}></Card>
 		{/each}
 	</div>
 </div>

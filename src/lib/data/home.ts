@@ -1,76 +1,55 @@
-export interface GameProps {
-	src: string;
-	alt: string;
-	name: string;
-	href: string;
-}
+import type { Data } from '$lib/types/home';
 
-interface Data {
-	id: number;
-	srcIcon: string;
-	srcCard: string;
-	alt: string;
-	name: string;
-	href: string;
-}
-
-interface EmoteData {
-	id: number;
-	src: string;
-	alt: string;
-}
-
-export const gamesList: Data[] = [
+export const games: Data[] = [
 	{
 		id: 0,
-		srcIcon: 'images/genshin/genshin-icon.webp',
-		srcCard: 'images/genshin/genshin-card.webp',
+		gameType: 'genshin',
 		alt: 'Genshin Icon',
-		name: 'Genshin Impact',
-		href: '/genshin'
+		name: 'Genshin Impact'
 	},
 	{
 		id: 1,
-		srcIcon: 'images/hsr/hsr-icon.webp',
-		srcCard: 'images/hsr/hsr-card.webp',
+		gameType: 'hsr',
 		alt: 'HSR Icon',
-		name: 'Honkai: Star Rail',
-		href: '/star-rail'
+		name: 'Honkai: Star Rail'
 	},
 	{
 		id: 2,
-		srcIcon: 'images/wuwa/wuwa-icon.webp',
-		srcCard: 'images/wuwa/wuwa-card.webp',
+		gameType: 'wuwa',
 		alt: 'Wuwa Icon',
-		name: 'Wuthering Waves',
-		href: '/wuthering-waves'
+		name: 'Wuthering Waves'
 	}
 ];
 
-export const emotesList: EmoteData[] = [
+export const emotes: Data[] = [
 	{
 		id: 0,
-		src: 'images/genshin/xiao-emote.webp',
+		gameType: 'genshin',
+		name: 'xiao-emote',
 		alt: 'Xiao Emote'
 	},
 	{
 		id: 1,
-		src: 'images/hsr/march-emote.webp',
+		gameType: 'hsr',
+		name: 'march-emote',
 		alt: 'March 7th Emote'
 	},
 	{
 		id: 2,
-		src: 'images/hsr/firefly-emote.webp',
+		gameType: 'hsr',
+		name: 'firefly-emote',
 		alt: 'Firefly Emote'
 	},
 	{
 		id: 3,
-		src: 'images/wuwa/rover-emote.webp',
+		gameType: 'wuwa',
+		name: 'rover-emote',
 		alt: 'Rover Emote'
 	},
 	{
 		id: 4,
-		src: 'images/genshin/paimon-emote.webp',
+		gameType: 'genshin',
+		name: 'paimon-emote',
 		alt: 'Paimon Emote'
 	}
 ];

@@ -1,13 +1,13 @@
 <script lang="ts">
+	import type { GameProps } from '$lib/types/home';
 	import { page } from '$app/stores';
-	import type { GameProps } from '$lib/data/home';
 
-	let { src, alt, name, href }: GameProps = $props();
+	let { alt, name, game }: GameProps = $props();
 </script>
 
-<a class={href == $page.url.pathname ? 'container active' : 'container'} {href}>
+<a class={game == $page.url.pathname ? 'container active' : 'container'} href={game}>
 	<div class="wrapper">
-		<img {src} {alt} width="30px" height="30px" />
+		<img src={`images/${game}/${game}-icon.webp`} {alt} width="30px" height="30px" />
 		<p class="name">{name}</p>
 	</div>
 </a>

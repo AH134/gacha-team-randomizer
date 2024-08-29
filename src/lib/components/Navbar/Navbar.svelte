@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Item from './Item.svelte';
-	import { gamesList } from '$lib/data/home';
+	import NavbarItem from './NavbarItem.svelte';
+	import { games } from '$lib/data/home';
 </script>
 
 <div id="navbar-container">
@@ -11,8 +11,8 @@
 			</div>
 		</a>
 
-		{#each gamesList as item (item.id)}
-			<Item src={item.srcIcon} alt={item.alt} name={item.name} href={item.href}></Item>
+		{#each games as game (game.id)}
+			<NavbarItem alt={game.alt} name={game.name} game={game.gameType}></NavbarItem>
 		{/each}
 	</nav>
 </div>

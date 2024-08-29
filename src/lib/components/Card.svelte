@@ -1,12 +1,18 @@
 <script lang="ts">
-	import type { GameProps } from '$lib/data/home';
+	import type { GameProps } from '$lib/types/home';
 
-	let { src, alt, name, href }: GameProps = $props();
+	let { alt, name, game }: GameProps = $props();
 </script>
 
-<a {href} class="container">
+<a class="container" href={game}>
 	<div class="wrapper">
-		<img {src} {alt} class="card-img" width="177px" height="236px" />
+		<img
+			src={`images/${game}/${game}-card.webp`}
+			{alt}
+			class="card-img"
+			width="177px"
+			height="236px"
+		/>
 		<p class="name">{name}</p>
 	</div>
 </a>
